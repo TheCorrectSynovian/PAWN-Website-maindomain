@@ -1,0 +1,1 @@
+button.btn-follow{grid-area:action;position:relative;color:#999;padding:8px}button.btn-follow svg{width:20px;height:20px;fill:none;stroke:currentcolor;stroke-width:2px}button.btn-follow:hover{color:#e5e5e5}button.btn-follow.followed svg{fill:currentcolor;stroke:none}button.btn-follow.followed{color:#f16436}button.btn-follow.followed:hover{color:#ff784d}
