@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2207763509951946"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenxy – Creator Hub for Minecraft, Mods & Tools</title>
+    <meta name="description" content="Prenxy is your futuristic creator hub for Minecraft mods, developer tools, and digital products. Join the community!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particles"></canvas>
+    
+    <!-- Gradient Light Streaks -->
+    <div class="light-streaks">
+        <div class="streak streak-1"></div>
+        <div class="streak streak-2"></div>
+        <div class="streak streak-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="4" width="14" height="14" rx="2" fill="url(#logoGrad1)"/>
+                        <rect x="22" y="4" width="14" height="14" rx="2" fill="url(#logoGrad2)"/>
+                        <rect x="4" y="22" width="14" height="14" rx="2" fill="url(#logoGrad2)"/>
+                        <rect x="22" y="22" width="14" height="14" rx="2" fill="url(#logoGrad1)"/>
+                        <defs>
+                            <linearGradient id="logoGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#00f5d4"/>
+                                <stop offset="100%" stop-color="#7b61ff"/>
+                            </linearGradient>
+                            <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#7b61ff"/>
+                                <stop offset="100%" stop-color="#ff6b9d"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">Prenxy</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#tools" class="nav-link">Tools</a></li>
+                <li><a href="#mods" class="nav-link">Mods</a></li>
+                <li><a href="#shop" class="nav-link">Shop</a></li>
+                <li><a href="#community" class="nav-link">Community</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Sign In</a>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#mods">Mods</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#community">Community</a></li>
+        </ul>
+        <div class="mobile-actions">
+            <a href="#" class="btn btn-ghost">Sign In</a>
+            <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-float">
+                <span class="badge-dot"></span>
+                <span>Now in Public Beta</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Create.</span>
+                <span class="title-line gradient-text">Build.</span>
+                <span class="title-line">Share.</span>
+            </h1>
+            <p class="hero-description">
+                The ultimate creator hub for Minecraft enthusiasts, mod developers, and digital creators. 
+                Powerful tools, stunning mods, and a thriving community – all in one place.
+            </p>
+            <div class="hero-actions">
+                <a href="#features" class="btn btn-primary btn-lg">
+                    <span>Explore Features</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#" class="btn btn-glass btn-lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"/>
+                    </svg>
+                    <span>Watch Demo</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50">0</span><span class="stat-suffix">K+</span>
+                    <span class="stat-label">Active Creators</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="1200">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Mods Published</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="99">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Uptime</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card-stack">
+                <div class="hero-card card-1" data-parallax="0.05">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <span class="card-label">Mod Builder</span>
+                </div>
+                <div class="hero-card card-2" data-parallax="0.08">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <span class="card-label">Dev Tools</span>
+                </div>
+                <div class="hero-card card-3" data-parallax="0.12">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                            <line x1="9" y1="9" x2="9.01" y2="9"/>
+                            <line x1="15" y1="9" x2="15.01" y2="9"/>
+                        </svg>
+                    </div>
+                    <span class="card-label">Community</span>
+                </div>
+                <div class="hero-card card-4" data-parallax="0.15">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="9" cy="21" r="1"/>
+                            <circle cx="20" cy="21" r="1"/>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                        </svg>
+                    </div>
+                    <span class="card-label">Shop</span>
+                </div>
+            </div>
+            <div class="hero-glow-orb orb-1"></div>
+            <div class="hero-glow-orb orb-2"></div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">Everything you need to <span class="gradient-text">create</span></h2>
+                <p class="section-description">
+                    From powerful mod development tools to seamless publishing – we've got you covered.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card feature-large" data-aos="fade-up">
+                    <div class="feature-card-bg"></div>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="3" y1="9" x2="21" y2="9"/>
+                            <line x1="9" y1="21" x2="9" y2="9"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Visual Mod Builder</h3>
+                    <p class="feature-description">
+                        Create stunning Minecraft mods with our intuitive drag-and-drop interface. 
+                        No coding experience required – but full code access when you need it.
+                    </p>
+                    <div class="feature-preview">
+                        <div class="preview-window">
+                            <div class="preview-bar">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="preview-content">
+                                <div class="preview-sidebar">
+                                    <div class="preview-item"></div>
+                                    <div class="preview-item"></div>
+                                    <div class="preview-item"></div>
+                                </div>
+                                <div class="preview-main">
+                                    <div class="preview-block block-1"></div>
+                                    <div class="preview-block block-2"></div>
+                                    <div class="preview-block block-3"></div>
+                                    <div class="preview-connector"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="feature-link">
+                        Learn more
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card-bg"></div>
+                    <div class="feature-icon icon-purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Version Control</h3>
+                    <p class="feature-description">
+                        Built-in Git integration with visual diff tools. Track changes, collaborate, and never lose your work.
+                    </p>
+                    <a href="#" class="feature-link">
+                        Learn more
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card-bg"></div>
+                    <div class="feature-icon icon-pink">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-time Collab</h3>
+                    <p class="feature-description">
+                        Work together in real-time with teammates. See changes instantly and communicate seamlessly.
+                    </p>
+                    <a href="#" class="feature-link">
+                        Learn more
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card-bg"></div>
+                    <div class="feature-icon icon-cyan">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Instant Deploy</h3>
+                    <p class="feature-description">
+                        One-click publishing to our mod repository. Automatic versioning and update distribution.
+                    </p>
+                    <a href="#" class="feature-link">
+                        Learn more
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card-bg"></div>
+                    <div class="feature-icon icon-green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <line x1="12" y1="1" x2="12" y2="23"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Monetization</h3>
+                    <p class="feature-description">
+                        Earn from your creations with our built-in marketplace. Set your prices and get paid directly.
+                    </p>
+                    <a href="#" class="feature-link">
+                        Learn more
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools" id="tools">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Developer Tools</span>
+                <h2 class="section-title">Powerful tools for <span class="gradient-text">developers</span></h2>
+                <p class="section-description">
+                    Professional-grade utilities designed to supercharge your workflow.
+                </p>
+            </div>
+            <div class="tools-showcase">
+                <div class="tools-tabs">
+                    <button class="tool-tab active" data-tab="editor">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                        <span>Code Editor</span>
+                    </button>
+                    <button class="tool-tab" data-tab="debugger">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                            <path d="M12 8v4M12 16h.01"/>
+                        </svg>
+                        <span>Debugger</span>
+                    </button>
+                    <button class="tool-tab" data-tab="terminal">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="4 17 10 11 4 5"/>
+                            <line x1="12" y1="19" x2="20" y2="19"/>
+                        </svg>
+                        <span>Terminal</span>
+                    </button>
+                    <button class="tool-tab" data-tab="assets">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21 15 16 10 5 21"/>
+                        </svg>
+                        <span>Asset Manager</span>
+                    </button>
+                </div>
+                <div class="tools-content">
+                    <div class="tool-panel active" id="editor">
+                        <div class="code-editor">
+                            <div class="editor-header">
+                                <div class="editor-tabs">
+                                    <span class="editor-tab active">CustomBlock.java</span>
+                                    <span class="editor-tab">ModMain.java</span>
+                                </div>
+                                <div class="editor-actions">
+                                    <button class="editor-btn">Run</button>
+                                    <button class="editor-btn primary">Build</button>
+                                </div>
+                            </div>
+                            <div class="editor-body">
+                                <div class="line-numbers">
+                                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                                    <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                                    <span>11</span><span>12</span><span>13</span><span>14</span><span>15</span>
+                                </div>
+                                <pre class="code-content"><code><span class="keyword">package</span> <span class="namespace">com.prenxy.mods</span>;
+
+<span class="keyword">import</span> <span class="namespace">net.minecraft.block.Block</span>;
+<span class="keyword">import</span> <span class="namespace">net.minecraft.block.material.Material</span>;
+
+<span class="keyword">public class</span> <span class="class-name">CustomBlock</span> <span class="keyword">extends</span> <span class="class-name">Block</span> {
+    
+    <span class="keyword">public</span> <span class="function">CustomBlock</span>() {
+        <span class="keyword">super</span>(<span class="class-name">Material</span>.<span class="constant">ROCK</span>);
+        <span class="keyword">this</span>.<span class="function">setHardness</span>(<span class="number">3.0f</span>);
+        <span class="keyword">this</span>.<span class="function">setResistance</span>(<span class="number">5.0f</span>);
+        <span class="keyword">this</span>.<span class="function">setLightLevel</span>(<span class="number">0.8f</span>);
+    }
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-panel" id="debugger">
+                        <div class="debugger-view">
+                            <div class="debug-header">
+                                <span class="debug-status running">● Running</span>
+                                <div class="debug-controls">
+                                    <button class="debug-btn" title="Pause">⏸</button>
+                                    <button class="debug-btn" title="Step Over">⤵</button>
+                                    <button class="debug-btn" title="Step Into">↓</button>
+                                    <button class="debug-btn" title="Stop">⏹</button>
+                                </div>
+                            </div>
+                            <div class="debug-panels">
+                                <div class="debug-panel">
+                                    <h4>Variables</h4>
+                                    <div class="var-item"><span class="var-name">blockHardness</span><span class="var-value">3.0f</span></div>
+                                    <div class="var-item"><span class="var-name">blockResistance</span><span class="var-value">5.0f</span></div>
+                                    <div class="var-item"><span class="var-name">lightLevel</span><span class="var-value">0.8f</span></div>
+                                </div>
+                                <div class="debug-panel">
+                                    <h4>Call Stack</h4>
+                                    <div class="stack-item active">CustomBlock.&lt;init&gt;:9</div>
+                                    <div class="stack-item">ModMain.registerBlocks:24</div>
+                                    <div class="stack-item">ModMain.init:15</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-panel" id="terminal">
+                        <div class="terminal-view">
+                            <div class="terminal-header">
+                                <span>Terminal</span>
+                                <div class="terminal-tabs">
+                                    <span class="terminal-tab active">bash</span>
+                                    <span class="terminal-tab">+</span>
+                                </div>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line"><span class="prompt">prenxy@dev</span>:<span class="path">~/mods/custom-block</span>$ prenxy build</div>
+                                <div class="terminal-line output">[INFO] Building CustomBlock mod v1.0.0...</div>
+                                <div class="terminal-line output">[INFO] Compiling 3 source files...</div>
+                                <div class="terminal-line output success">[SUCCESS] Build completed in 2.3s</div>
+                                <div class="terminal-line output">[INFO] Output: ./build/CustomBlock-1.0.0.jar</div>
+                                <div class="terminal-line"><span class="prompt">prenxy@dev</span>:<span class="path">~/mods/custom-block</span>$ prenxy publish</div>
+                                <div class="terminal-line output">[INFO] Publishing to Prenxy Repository...</div>
+                                <div class="terminal-line output success">[SUCCESS] Published! View at: prenxy.app/mods/custom-block</div>
+                                <div class="terminal-line cursor"><span class="prompt">prenxy@dev</span>:<span class="path">~/mods/custom-block</span>$ <span class="blink">_</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool-panel" id="assets">
+                        <div class="assets-view">
+                            <div class="assets-header">
+                                <span>Asset Manager</span>
+                                <button class="upload-btn">+ Upload</button>
+                            </div>
+                            <div class="assets-grid">
+                                <div class="asset-item">
+                                    <div class="asset-preview texture">
+                                        <div class="pixel-grid"></div>
+                                    </div>
+                                    <span class="asset-name">block_top.png</span>
+                                </div>
+                                <div class="asset-item">
+                                    <div class="asset-preview texture">
+                                        <div class="pixel-grid side"></div>
+                                    </div>
+                                    <span class="asset-name">block_side.png</span>
+                                </div>
+                                <div class="asset-item">
+                                    <div class="asset-preview model">
+                                        <div class="cube-3d"></div>
+                                    </div>
+                                    <span class="asset-name">block.json</span>
+                                </div>
+                                <div class="asset-item">
+                                    <div class="asset-preview sound">
+                                        <div class="sound-wave"></div>
+                                    </div>
+                                    <span class="asset-name">break.ogg</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mods Gallery Section -->
+    <section class="mods" id="mods">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Mod Gallery</span>
+                <h2 class="section-title">Discover amazing <span class="gradient-text">mods</span></h2>
+                <p class="section-description">
+                    Browse thousands of community-created mods, resource packs, and data packs.
+                </p>
+            </div>
+            <div class="mods-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Popular</button>
+                <button class="filter-btn">New</button>
+                <button class="filter-btn">Updated</button>
+            </div>
+            <div class="mods-grid">
+                <article class="mod-card" data-aos="fade-up">
+                    <div class="mod-image">
+                        <div class="mod-placeholder gradient-1">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            </svg>
+                        </div>
+                        <div class="mod-badges">
+                            <span class="badge badge-featured">Featured</span>
+                        </div>
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-meta">
+                            <span class="mod-category">Gameplay</span>
+                            <span class="mod-version">1.20.4</span>
+                        </div>
+                        <h3 class="mod-title">Neon Dimensions</h3>
+                        <p class="mod-description">Explore vibrant neon-lit dimensions with unique mobs and resources.</p>
+                        <div class="mod-footer">
+                            <div class="mod-stats">
+                                <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5l2.09 6.26H21l-5.55 4.03 2.09 6.26L12 16.77l-5.55 4.03 2.09-6.26L3 10.76h6.91L12 4.5z"/></svg> 4.9</span>
+                                <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> 125K</span>
+                            </div>
+                            <a href="#" class="mod-btn">View</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="mod-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mod-image">
+                        <div class="mod-placeholder gradient-2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-meta">
+                            <span class="mod-category">Tools</span>
+                            <span class="mod-version">1.20.4</span>
+                        </div>
+                        <h3 class="mod-title">Quantum Tools</h3>
+                        <p class="mod-description">Advanced tools with quantum mechanics-inspired abilities.</p>
+                        <div class="mod-footer">
+                            <div class="mod-stats">
+                                <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5l2.09 6.26H21l-5.55 4.03 2.09 6.26L12 16.77l-5.55 4.03 2.09-6.26L3 10.76h6.91L12 4.5z"/></svg> 4.7</span>
+                                <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> 89K</span>
+                            </div>
+                            <a href="#" class="mod-btn">View</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="mod-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mod-image">
+                        <div class="mod-placeholder gradient-3">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/>
+                                <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/>
+                                <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/>
+                                <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/>
+                            </svg>
+                        </div>
+                        <div class="mod-badges">
+                            <span class="badge badge-new">New</span>
+                        </div>
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-meta">
+                            <span class="mod-category">World Gen</span>
+                            <span class="mod-version">1.20.4</span>
+                        </div>
+                        <h3 class="mod-title">Biome Fusion</h3>
+                        <p class="mod-description">Seamlessly blend biomes together for stunning landscapes.</p>
+                        <div class="mod-footer">
+                            <div class="mod-stats">
+                                <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5l2.09 6.26H21l-5.55 4.03 2.09 6.26L12 16.77l-5.55 4.03 2.09-6.26L3 10.76h6.91L12 4.5z"/></svg> 4.8</span>
+                                <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> 67K</span>
+                            </div>
+                            <a href="#" class="mod-btn">View</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="mod-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="mod-image">
+                        <div class="mod-placeholder gradient-4">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/>
+                                <path d="M8.5 8.5v.01"/>
+                                <path d="M16 15.5v.01"/>
+                                <path d="M12 12v.01"/>
+                                <path d="M11 17v.01"/>
+                                <path d="M7 14v.01"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="mod-content">
+                        <div class="mod-meta">
+                            <span class="mod-category">Mobs</span>
+                            <span class="mod-version">1.20.4</span>
+                        </div>
+                        <h3 class="mod-title">Mystical Creatures</h3>
+                        <p class="mod-description">Over 50 new mythological creatures to discover and tame.</p>
+                        <div class="mod-footer">
+                            <div class="mod-stats">
+                                <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5l2.09 6.26H21l-5.55 4.03 2.09 6.26L12 16.77l-5.55 4.03 2.09-6.26L3 10.76h6.91L12 4.5z"/></svg> 4.6</span>
+                                <span class="stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> 156K</span>
+                            </div>
+                            <a href="#" class="mod-btn">View</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="section-cta">
+                <a href="#" class="btn btn-outline btn-lg">
+                    Browse All Mods
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop" id="shop">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Shop</span>
+                <h2 class="section-title">Premium <span class="gradient-text">marketplace</span></h2>
+                <p class="section-description">
+                    Support creators and get exclusive premium content, services, and digital goods.
+                </p>
+            </div>
+            <div class="shop-categories">
+                <div class="shop-category" data-aos="fade-up">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21 15 16 10 5 21"/>
+                            </svg>
+                        </div>
+                        <h3>Resource Packs</h3>
+                        <p>HD textures, custom models, and complete visual overhauls</p>
+                        <span class="category-count">340+ items</span>
+                    </div>
+                </div>
+                <div class="shop-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-card">
+                        <div class="category-icon icon-purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            </svg>
+                        </div>
+                        <h3>Premium Mods</h3>
+                        <p>Exclusive mods with advanced features and support</p>
+                        <span class="category-count">180+ items</span>
+                    </div>
+                </div>
+                <div class="shop-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-card">
+                        <div class="category-icon icon-pink">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                        </div>
+                        <h3>Tutorials</h3>
+                        <p>In-depth courses and guides from expert creators</p>
+                        <span class="category-count">95+ items</span>
+                    </div>
+                </div>
+                <div class="shop-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-card">
+                        <div class="category-icon icon-cyan">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3>Server Plugins</h3>
+                        <p>Custom plugins for Bukkit, Spigot, and Paper servers</p>
+                        <span class="category-count">250+ items</span>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-featured">
+                <h3 class="featured-title">Featured Products</h3>
+                <div class="products-grid">
+                    <div class="product-card" data-aos="zoom-in">
+                        <div class="product-image">
+                            <div class="product-placeholder gradient-1">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21 15 16 10 5 21"/>
+                                </svg>
+                            </div>
+                            <span class="product-badge">-20%</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Resource Pack</span>
+                            <h4 class="product-name">Ultra Realism HD</h4>
+                            <p class="product-desc">512x photorealistic textures</p>
+                            <div class="product-pricing">
+                                <span class="price-current">$9.99</span>
+                                <span class="price-original">$12.99</span>
+                            </div>
+                            <button class="product-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="product-image">
+                            <div class="product-placeholder gradient-2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Premium Mod</span>
+                            <h4 class="product-name">Tech Revolution</h4>
+                            <p class="product-desc">Complete tech mod suite</p>
+                            <div class="product-pricing">
+                                <span class="price-current">$14.99</span>
+                            </div>
+                            <button class="product-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="product-image">
+                            <div class="product-placeholder gradient-3">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                </svg>
+                            </div>
+                            <span class="product-badge hot">Hot</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Course</span>
+                            <h4 class="product-name">Mod Dev Mastery</h4>
+                            <p class="product-desc">12-hour complete course</p>
+                            <div class="product-pricing">
+                                <span class="price-current">$29.99</span>
+                            </div>
+                            <button class="product-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community" id="community">
+        <div class="section-container">
+            <div class="community-wrapper">
+                <div class="community-content">
+                    <span class="section-tag">Community</span>
+                    <h2 class="section-title">Join <span class="gradient-text">50,000+</span> creators</h2>
+                    <p class="section-description">
+                        Connect with fellow creators, share your work, get feedback, and collaborate on amazing projects.
+                    </p>
+                    <div class="community-features">
+                        <div class="community-feature">
+                            <div class="cf-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                                </svg>
+                            </div>
+                            <div class="cf-text">
+                                <h4>Discussion Forums</h4>
+                                <p>Share ideas and get help from the community</p>
+                            </div>
+                        </div>
+                        <div class="community-feature">
+                            <div class="cf-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="cf-text">
+                                <h4>Creator Teams</h4>
+                                <p>Form teams and collaborate on large projects</p>
+                            </div>
+                        </div>
+                        <div class="community-feature">
+                            <div class="cf-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="8" r="7"/>
+                                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                                </svg>
+                            </div>
+                            <div class="cf-text">
+                                <h4>Weekly Events</h4>
+                                <p>Jams, competitions, and community challenges</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="community-cta">
+                        <a href="#" class="btn btn-primary btn-lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
+                                <polyline points="10 17 15 12 10 7"/>
+                                <line x1="15" y1="12" x2="3" y2="12"/>
+                            </svg>
+                            Join Discord
+                        </a>
+                        <a href="#" class="btn btn-ghost btn-lg">View Forums</a>
+                    </div>
+                </div>
+                <div class="community-visual">
+                    <div class="avatar-stack">
+                        <div class="avatar-row">
+                            <div class="avatar" style="--delay: 0s; --color: #00f5d4;">A</div>
+                            <div class="avatar" style="--delay: 0.1s; --color: #7b61ff;">B</div>
+                            <div class="avatar" style="--delay: 0.2s; --color: #ff6b9d;">C</div>
+                            <div class="avatar" style="--delay: 0.3s; --color: #ffd93d;">D</div>
+                        </div>
+                        <div class="avatar-row">
+                            <div class="avatar" style="--delay: 0.4s; --color: #6bcb77;">E</div>
+                            <div class="avatar" style="--delay: 0.5s; --color: #4d96ff;">F</div>
+                            <div class="avatar" style="--delay: 0.6s; --color: #ff6b6b;">G</div>
+                        </div>
+                        <div class="avatar-row">
+                            <div class="avatar" style="--delay: 0.7s; --color: #c9b1ff;">H</div>
+                            <div class="avatar" style="--delay: 0.8s; --color: #00d9ff;">I</div>
+                        </div>
+                    </div>
+                    <div class="activity-feed">
+                        <div class="activity-item">
+                            <span class="activity-avatar" style="background: #00f5d4;">M</span>
+                            <div class="activity-content">
+                                <strong>MysticDev</strong> published a new mod
+                                <span class="activity-time">2m ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-avatar" style="background: #7b61ff;">C</span>
+                            <div class="activity-content">
+                                <strong>CraftKing</strong> joined the community
+                                <span class="activity-time">5m ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-avatar" style="background: #ff6b9d;">P</span>
+                            <div class="activity-content">
+                                <strong>PixelArtist</strong> uploaded new textures
+                                <span class="activity-time">8m ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-glow"></div>
+        </div>
+        <div class="section-container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to start creating?</h2>
+                <p class="cta-description">
+                    Join thousands of creators building amazing things with Prenxy. 
+                    Free to start, no credit card required.
+                </p>
+                <div class="cta-actions">
+                    <a href="#" class="btn btn-white btn-xl">
+                        Get Started Free
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <p class="cta-note">✨ No credit card required • Free forever tier available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="4" y="4" width="14" height="14" rx="2" fill="url(#footerLogoGrad1)"/>
+                                <rect x="22" y="4" width="14" height="14" rx="2" fill="url(#footerLogoGrad2)"/>
+                                <rect x="4" y="22" width="14" height="14" rx="2" fill="url(#footerLogoGrad2)"/>
+                                <rect x="22" y="22" width="14" height="14" rx="2" fill="url(#footerLogoGrad1)"/>
+                                <defs>
+                                    <linearGradient id="footerLogoGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#00f5d4"/>
+                                        <stop offset="100%" stop-color="#7b61ff"/>
+                                    </linearGradient>
+                                    <linearGradient id="footerLogoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#7b61ff"/>
+                                        <stop offset="100%" stop-color="#ff6b9d"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="logo-text">Prenxy</span>
+                    </a>
+                    <p class="footer-tagline">The ultimate creator hub for Minecraft enthusiasts and mod developers.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Discord">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#tools">Developer Tools</a></li>
+                            <li><a href="#mods">Mod Gallery</a></li>
+                            <li><a href="#shop">Marketplace</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Changelog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#">Discord Server</a></li>
+                            <li><a href="#">Forums</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Creator Program</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press Kit</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Legal</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Prenxy. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
